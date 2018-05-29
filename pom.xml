@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>jp.te4a.spring.boot</groupId>
-	<artifactId>MyBootApp13</artifactId>
+	<artifactId>MyBootAppTest1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>MyBootApp13</name>
+	<name>MyBootAppTest1</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -79,6 +79,13 @@
         	<artifactId>h2</artifactId>
         	<scope>runtime</scope>
     	</dependency>
+    	<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+    		<groupId>junit</groupId>
+    		<artifactId>junit</artifactId>
+    		<version>4.12</version>
+    		<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>

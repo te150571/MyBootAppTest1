@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
   <head>
     <meta charset="UTF-8" />
     <title>書籍登録一覧画面</title>
 	<link rel="stylesheet" type="text/css" href="../../static/css/style.css" th:href="@{/css/style.css}"/>
   </head>
   <body>
+  	<p>
+	  	<span sec:authentication="principal.user.username">duke</span>さんログイン中。
+	</p>
+	<form th:action="@{/logout}" method="post"><input type="submit" class="btn btn-default btn-xs" value="ログアウト" /></form>
     <form th:action="@{/books/create}" th:object="${bookForm}" method="post">
       <table>
         <tr><td>タイトル:</td><td>
